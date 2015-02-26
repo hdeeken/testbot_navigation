@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="mapmetafile"/>
+
+  <node name="map_server" pkg="map_server" type="map_server" output="screen" args="$(arg mapmetafile)" />
+
+  <include file="$(find robot_navigation)/launch/components/amcl.launch" />
+  <include file="$(find robot_navigation)/launch/components/move_base.launch" />
+</launch>

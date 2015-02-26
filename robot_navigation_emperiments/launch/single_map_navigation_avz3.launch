@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find robot_navigation)/launch/single_map_navigation.launch" >
+    <arg name="mapmetafile" value="$(find robot_navigation_experiments)/maps/avz3floor_complete.yaml" />
+  </include>
+</launch>
